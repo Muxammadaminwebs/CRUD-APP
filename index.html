@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="site-top">
+                <h1 class="heading">Images Site</h1>
+                <button class="data__add" id="addData">Add new data</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="cards__section">
+            <div class="container">
+                <div class="cards__wrapper" id="root">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="modal-window" id="modalWindow">
+        <div class="modal-card modal-card-close" id="modalCard">
+            <div class="modalTopWrapper">
+                <h2 class="ModalHeading">Add Data</h2>
+                <i class="bi bi-x-square" id="closeModalCard"></i>
+            </div>
+            <div class="adding">
+                <input type="text" class="addNewDataInputs" id="title" placeholder="Enter Title">
+                <input type="text" class="addNewDataInputs" id="iconUrl" placeholder="Enter icon url">
+                <input type="text" class="addNewDataInputs" id="imageUrl" placeholder="Enter image url">
+                <button class="modalButton" required>Add Student</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./scripts/plugin.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>

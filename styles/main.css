@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1520px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.heading {
+    font-size: 45px;
+    font-family: sans-serif;
+    color: rgb(242, 145, 0);
+}
+
+.data__add {
+    background-color: rgb(0, 162, 255);
+    border: none;
+    font-size: 22px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.site-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    gap: 30px;
+}
+
+.card {
+    background-color: rgba(82, 156, 187, 0.979);
+    border-radius: 12px;
+    position: relative;
+    padding-bottom: 250px;
+}
+
+.card-top {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    width: 75%;
+}
+
+.card-img {
+    width: 100%;
+    height: 260px;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+}
+
+.modalTopWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-window {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.374);
+    top: 0;
+    display: flex;
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-card {
+    background-color: #fff;
+    padding: 12px;
+    width: 30%;
+    transition: all 0.3s;
+    border-radius: 12px;
+    padding: 20px;
+    animation-name: animatetop;
+    animation-duration: 0.3s
+}
+
+.bi-x-square {
+    font-size: 30px;
+    color: rgba(255, 0, 0, 0.896);
+    cursor: pointer;
+
+}
+
+.bi-x-square:hover {
+    color: rgba(255, 0, 0, 0.604);
+}
+
+.modal-card-close {
+    animation-name: closemodal;
+    animation-duration: 0.3s;
+}
+
+.adding {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addNewDataInputs {
+    border: none;
+    outline: 1px solid rgb(208, 4, 208);
+    border-radius: 4px;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+}
+
+.modalButton {
+    border: none;
+    border-radius: 12px;
+    padding: 15px 15px;
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+    cursor: pointer;
+}
+
+.editDelete {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.deleteimg {
+    background-color: red;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 12px;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Editimg{
+    background-color: rgb(0, 255, 136);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 12px;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
